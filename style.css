@@ -1,15 +1,18 @@
-.grid {
-  background-color: #f1fcf9;
+body {
+  background-color: #eaeef0;
+  margin-top: 7%;
+  margin-left: 7%;
+  margin-right: 7%;
 }
 
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1.4fr 0.9fr 1.7fr 0.1fr 2.4fr;
-      grid-template-columns: 1.4fr 0.9fr 1.7fr 0.1fr 2.4fr;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
-  gap: 5px 11px;
+  -ms-grid-columns: 2fr 0.9fr 1.8fr 0.3fr .9fr;
+      grid-template-columns: 2fr 0.9fr 1.8fr 0.3fr .9fr;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 30px 30px;
       grid-template-areas: "daniel daniel jonathan  kira" "jeanette patrick patrick  kira";
 }
 
@@ -46,60 +49,12 @@
   grid-area: patrick;
 }
 
-daniel {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: daniel;
-}
-
-jonathan {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-  grid-area: jonathan;
-}
-
-jeanette {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: jeanette;
-  grid-column-start: 1;
-  grid-row-end: 1;
-}
-
-patrick {
-  -ms-grid-row: 2;
-  -ms-grid-column: 2;
-  -ms-grid-column-span: 2;
-  grid-area: patrick;
-}
-
-kira {
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 4;
-  grid-area: kira;
-}
-
-.daniel {
-  background-color: #b208e6;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  border-radius: 2%;
-}
-
 .encabezado {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  background-color: blue;
   margin-left: 2em;
   margin-top: 40px;
   margin-left: 30px;
@@ -112,6 +67,7 @@ kira {
   margin-top: 1em;
   width: 42px;
   height: 42px;
+  border-radius: 42%;
 }
 
 .identificacion {
@@ -135,47 +91,44 @@ kira {
   margin-top: -20px;
 }
 
-.msg {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
 .msg1 {
-  font-size: 25px;
+  font-size: 16px;
   font-weight: bold;
   color: white;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .msg2 {
-  color: #e4d7d7;
+  color: #a39d9d;
+  font-size: 14px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.daniel {
+  background-color: #7645c5;
+  border-radius: 2%;
 }
 
 .jonathan {
-  background-color: #59dfc2;
+  background-color: #465770;
+  border-radius: 2%;
 }
 
 .jeanette {
-  background-color: #b8a656;
+  background-color: #ece3e3;
+  border-radius: 2%;
 }
 
 .patrick {
-  background-color: #6da0b8;
+  background-color: #15262e;
+  border-radius: 2%;
 }
 
 .kira {
-  background-color: #73a742;
-  height: 200%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  background-color: #471e1e;
+  border-radius: 2%;
 }
 
 @media only screen and (max-width: 550px) {
@@ -185,6 +138,9 @@ kira {
     -ms-grid-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-rows: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
         grid-template-areas: "daniel" "jonathan" "jeanette"  "patrick" "kira";
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

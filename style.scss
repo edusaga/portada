@@ -1,70 +1,32 @@
-
-.grid{
-    background-color: rgb(241, 252, 249);
-    
+body{
+    background-color: rgb(234, 238, 240);
+    margin-top: 7%;
+    margin-left:7%;
+    margin-right: 7%;
 }
-
-
+ 
 .grid {
-    display: grid; 
-    grid-template-columns: 1.4fr 0.9fr 1.7fr 0.1fr 2.4fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
-    gap: 5px 11px; 
+      
+    display: grid;  
+    grid-template-columns: 2fr 0.9fr 1.8fr 0.3fr .9fr; 
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ; 
+    gap: 30px 30px; 
     grid-template-areas: 
       "daniel daniel jonathan  kira"
-      "jeanette patrick patrick  kira" ; 
+      "jeanette patrick patrick  kira"
+       ; 
   }
   .daniel { grid-area: daniel; }
   .jonathan { grid-area: jonathan; }
   .jeanette { grid-area: jeanette; }
-  .kira { grid-area: kira;
-   }
+  .kira { grid-area: kira;    }
   .patrick { grid-area: patrick; }
      
-  
-
-  daniel{
-      grid-area: daniel;
-     
-  }
-
-  jonathan{
-    grid-area:jonathan;
-}
-
  
-jeanette{
-    grid-area:jeanette;
-    grid-column-start: 1;
-    grid-row-end: 1;
-}
-
- 
-patrick{
-    grid-area: patrick;
-}
-
- 
-kira{
-    grid-area: kira;
-    
-}
-
-
-
-.daniel { 
-    background-color: rgb(178, 8, 230);
-    display: flex; 
-    flex-direction: column;
-    border-radius: 2%;
-   
-}
-
 .encabezado {
     display: flex;
     align-content: space-around;
-    background-color: blue;
-    
+        
    margin-left: 2em;
    margin-top: 40px;
    margin-left: 30px;
@@ -77,24 +39,20 @@ kira{
     margin-right: 13px;
     margin-top: 1em;
     width: 42px;
-    height: 42px
+    height: 42px;
+    border-radius: 42%;
 }
 
 .identificacion{
     display: flex;
     flex-direction: column;
-   
-   
-     
-
-         
+             
 }
 
     .nombre{
     color: white;
     width: bold;
-    
-   
+      
     }
 
     .cargo{
@@ -104,35 +62,44 @@ kira{
     
      }
 
-.msg{
-display: flex;
-flex-direction: column;
-align-items: center;
-    
-}
+ 
 
 .msg1{
-    font-size:25px ;
+    font-size:16px ;
     font-weight: bold;
     color: white;
-     
+    margin-left: 20px;
+        margin-right: 20px;
 }
 
 .msg2{
-     color:rgb(228, 215, 215);
-      
+     color:rgb(163, 157, 157);
+     font-size:14px ;
+     margin-left: 20px;
+     margin-right: 20px;
 }
 
 
 
-.jonathan { background-color: rgb(89, 223, 194); }
-.jeanette { background-color: rgb(184, 166, 86); }
-.patrick{background-color: rgb(109, 160, 184); }
+.daniel { 
+    background-color: rgb(118, 69, 197);
+    border-radius: 2%;
+    }
+.jonathan { background-color: rgb(70, 87, 112);
+    border-radius: 2%;
+}
+
+.jeanette { background-color: rgb(236, 227, 227); 
+    border-radius: 2%;
+     
+}
+.patrick{background-color: rgb(21, 38, 46);
+    border-radius: 2%;
+}
 
 
-.kira{background-color: rgb(115, 167, 66);
-    height: 200%;
-    justify-content: center;
+.kira{background-color: rgb(71, 30, 30);
+    border-radius: 2%; 
     }
 
 
@@ -147,6 +114,7 @@ align-items: center;
         "patrick"
         "kira"
         ;
+        align-items: center;
     }
     
 }
