@@ -5,22 +5,44 @@ body{
     margin-right: 7%;
 }
  
-.grid {
-      
+.grid {      
     display: grid;  
-    grid-template-columns: 2fr 0.9fr 1.8fr 0.3fr .9fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr ; 
-    gap: 30px 30px; 
+    grid-template-columns: 1fr  1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr   ; 
+    gap: 20px 20px; 
     grid-template-areas: 
       "daniel daniel jonathan  kira"
       "jeanette patrick patrick  kira"
        ; 
   }
-  .daniel { grid-area: daniel; }
-  .jonathan { grid-area: jonathan; }
-  .jeanette { grid-area: jeanette; }
-  .kira { grid-area: kira;    }
-  .patrick { grid-area: patrick; }
+    
+  .daniel{ 
+      grid-area:daniel  ;
+      background-color: rgb(118, 69, 197);
+      //height: 200px;
+      border-radius: 2%;
+}  
+  .jonathan { 
+      grid-area: jonathan;
+      background-color: rgb(70, 87, 112);
+      border-radius: 2%;
+ }
+  .jeanette { grid-area: jeanette;
+    background-color: rgb(236, 227, 227); 
+    border-radius: 2%;
+}
+  .kira { 
+      grid-area: kira;  
+      background-color: rgb(71, 30, 30);
+      border-radius: 2%; 
+     }
+
+
+  .patrick { 
+   grid-area: patrick;
+    background-color: rgb(21, 38, 46);
+    border-radius: 2%;
+ }
      
  
 .encabezado {
@@ -81,27 +103,10 @@ body{
 
 
 
-.daniel { 
-    background-color: rgb(118, 69, 197);
-    border-radius: 2%;
-    }
-.jonathan { background-color: rgb(70, 87, 112);
-    border-radius: 2%;
-}
 
-.jeanette { background-color: rgb(236, 227, 227); 
-    border-radius: 2%;
-     
-}
-.patrick{background-color: rgb(21, 38, 46);
-    border-radius: 2%;
-}
-
-
-.kira{background-color: rgb(71, 30, 30);
-    border-radius: 2%; 
-    }
-
+ 
+ 
+ 
 
 @media  only screen and (max-width:550px) {
     .grid{

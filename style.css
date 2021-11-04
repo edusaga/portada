@@ -8,11 +8,11 @@ body {
 .grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 2fr 0.9fr 1.8fr 0.3fr .9fr;
-      grid-template-columns: 2fr 0.9fr 1.8fr 0.3fr .9fr;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 30px 30px;
+  -ms-grid-columns: 1fr  1fr 1fr 1fr;
+      grid-template-columns: 1fr  1fr 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 20px 20px;
       grid-template-areas: "daniel daniel jonathan  kira" "jeanette patrick patrick  kira";
 }
 
@@ -21,18 +21,24 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: daniel;
+  background-color: #7645c5;
+  border-radius: 2%;
 }
 
 .jonathan {
   -ms-grid-row: 1;
   -ms-grid-column: 3;
   grid-area: jonathan;
+  background-color: #465770;
+  border-radius: 2%;
 }
 
 .jeanette {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
   grid-area: jeanette;
+  background-color: #ece3e3;
+  border-radius: 2%;
 }
 
 .kira {
@@ -40,6 +46,8 @@ body {
   -ms-grid-row-span: 2;
   -ms-grid-column: 4;
   grid-area: kira;
+  background-color: #471e1e;
+  border-radius: 2%;
 }
 
 .patrick {
@@ -47,6 +55,8 @@ body {
   -ms-grid-column: 2;
   -ms-grid-column-span: 2;
   grid-area: patrick;
+  background-color: #15262e;
+  border-radius: 2%;
 }
 
 .encabezado {
@@ -104,31 +114,6 @@ body {
   font-size: 14px;
   margin-left: 20px;
   margin-right: 20px;
-}
-
-.daniel {
-  background-color: #7645c5;
-  border-radius: 2%;
-}
-
-.jonathan {
-  background-color: #465770;
-  border-radius: 2%;
-}
-
-.jeanette {
-  background-color: #ece3e3;
-  border-radius: 2%;
-}
-
-.patrick {
-  background-color: #15262e;
-  border-radius: 2%;
-}
-
-.kira {
-  background-color: #471e1e;
-  border-radius: 2%;
 }
 
 @media only screen and (max-width: 550px) {
