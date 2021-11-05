@@ -10,8 +10,8 @@ body {
   display: grid;
   -ms-grid-columns: 1fr  1fr 1fr 1fr;
       grid-template-columns: 1fr  1fr 1fr 1fr;
-  -ms-grid-rows: 1fr 1fr;
-      grid-template-rows: 1fr 1fr;
+  -ms-grid-rows: 0.3fr 1fr;
+      grid-template-rows: 0.3fr 1fr;
   gap: 20px 20px;
       grid-template-areas: "daniel daniel jonathan  kira" "jeanette patrick patrick  kira";
 }
