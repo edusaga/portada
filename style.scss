@@ -1,7 +1,7 @@
       
  @import url("https://fonts.google.com/specimen/Barlow+Semi+Condensed?family=Barlow+Semi+Condensed+display:wght@500;600");
 
- :root {
+ :root{
  /* Typography */
    --fs: 13px;
    --fw-500: 500px;
@@ -24,17 +24,18 @@
 
 
 body{
-    font-family: 'Barlow Semi Condensed', sans-serif ;
+    font-family: 'Barlow Semi Condensed', 'sans-serif' ;
     background-color: rgb(234, 238, 240);
     margin-top: 7%;
     margin-left:7%;
     margin-right: 7%;
+    margin-bottom: 7%;
 }
  
-.grid {      
+.grid{      
     display: grid;  
     grid-template-columns: 1fr  1fr 1fr 1fr; 
-    grid-template-rows: 0.3fr 1fr   ; 
+    grid-template-rows: 0.3fr 1fr; 
     gap: 20px 20px; 
     grid-template-areas: 
       "daniel daniel jonathan  kira"
@@ -43,7 +44,7 @@ body{
   }
     
   .daniel{ 
-      grid-area:daniel  ;
+      grid-area: daniel  ;
       background-color: var(--moderate-violet) ;
       border-radius: 2%;
       background-image: url(./img/bg-pattern-quotation.svg);
@@ -62,7 +63,7 @@ body{
 }
 
 
-.jonathan { 
+.jonathan{ 
       grid-area: jonathan;
       background-color: rgb(70, 87, 112);
       border-radius: 2%;
@@ -73,7 +74,7 @@ body{
 
 
 
-  .kira { 
+  .kira{ 
       grid-area: kira;  
       background-color: white;
       
@@ -90,7 +91,7 @@ body{
 
 
 
-.jeanette { 
+.jeanette{ 
     grid-area: jeanette;
     background-color: rgb(236, 227, 227); 
     border-radius: 2%;
@@ -105,14 +106,14 @@ body{
      color:black;
  }
 
-  .patrick { 
+.patrick{ 
    grid-area: patrick;
     background-color: rgb(21, 38, 46);
     border-radius: 2%;
  }
      
  
-.encabezado {
+.encabezado{
     display: flex;
     align-content: space-around;
         
