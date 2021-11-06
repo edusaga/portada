@@ -1,5 +1,5 @@
       
- @import url("https://fonts.google.com/specimen/Barlow+Semi+Condensed?family=Barlow+Semi+Condensed+display:wght@500;600"]);
+ @import url("https://fonts.google.com/specimen/Barlow+Semi+Condensed?family=Barlow+Semi+Condensed+display:wght@500;600");
 
  :root {
  /* Typography */
@@ -9,14 +9,14 @@
 
   // ## Colors
   //### Primary
-    --moderate-violet: hsl(263, 55%, 52%)
-    --very-dark-grayish-blue: hsl(217, 19%, 35%)
-    --very-dark-blackish-blue: hsl(219, 29%, 14%)
-    --white: hsl(0, 0%, 100%)
+    --moderate-violet: hsl(263, 55%, 52%);
+    --very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --white: hsl(0, 0%, 100%);
   
   //### Neutral
-    --light-gray: hsl(0, 0%, 81%)
-    --light-grayish blue: hsl(210, 46%, 95%)
+    --light-gray: hsl(0, 0%, 81%);
+    --light-grayish-blue: hsl(210, 46%, 95%);
 
  }
 
@@ -24,6 +24,7 @@
 
 
 body{
+    font-family: 'Barlow Semi Condensed', sans-serif ;
     background-color: rgb(234, 238, 240);
     margin-top: 7%;
     margin-left:7%;
@@ -43,25 +44,66 @@ body{
     
   .daniel{ 
       grid-area:daniel  ;
-      background-color: --moderate-violet ;
-      //height: 200px;
+      background-color: var(--moderate-violet) ;
       border-radius: 2%;
-}  
-  .jonathan { 
+      background-image: url(./img/bg-pattern-quotation.svg);
+      background-repeat: no-repeat;
+      background-position:top right; 
+     
+} 
+
+.daniel .msg1{
+    color:white;
+}
+
+.daniel .msg2{
+    color: var(--light-gray);
+    text-align:left;
+}
+
+
+.jonathan { 
       grid-area: jonathan;
       background-color: rgb(70, 87, 112);
       border-radius: 2%;
  }
-  .jeanette { grid-area: jeanette;
-    background-color: rgb(236, 227, 227); 
-    border-radius: 2%;
+.jonathan .msg2{
+    color: var(--light-grayish-blue);
 }
+
+
+
   .kira { 
       grid-area: kira;  
-      background-color: rgb(71, 30, 30);
+      background-color: white;
+      
       border-radius: 2%; 
+      box-shadow: 10px 5px 5px rgb(217, 238, 245); 
      }
 
+.kira .identificacion .nombre{
+   color: black;
+}
+.kira .msg1{
+    color:black;
+}
+
+
+
+.jeanette { 
+    grid-area: jeanette;
+    background-color: rgb(236, 227, 227); 
+    border-radius: 2%;
+    box-shadow: 10px 5px 5px rgb(217, 238, 245);
+}
+
+.jeanette .identificacion .nombre{
+    color: black;
+ }
+ 
+ .jeanette .msg1{
+     color:black;
+ }
 
   .patrick { 
    grid-area: patrick;
@@ -87,45 +129,43 @@ body{
     margin-top: 1em;
     width: 42px;
     height: 42px;
-   // border-radius: 42%;
-    box-shadow: 90px 90px white;
-    border: 1px solid;
+    border-radius:50%;
+    border: 3px solid var(--light-gray);
 }
 
 
 .identificacion{
     display: flex;
     flex-direction: column;
-             
+   
 }
 
     .nombre{
-    color: white;
-    width: bold;
-    font-size: var(--fs);
-      
+      color: white;
+     font-weight: bold;
     }
 
-    .cargo{
-    color: var(--light-gray) ;
-    height: 1px;
+    .cargo{ 
+  //  color: hsla(0%, 0%, 81%, .5);
     margin-top:-20px ;
+    font-size:0.4rem;
+    color: var(--light-gray);
     
      }
-
  
 
+
 .msg1{
-    font-size:16px ;
+    font-size: 1.3rem;
     font-weight: bold;
     color: white;
     margin-left: 20px;
-        margin-right: 20px;
+    margin-right: 20px;
+    align-content: center;
 }
 
 .msg2{
-     color:rgb(163, 157, 157);
-     font-size:14px ;
+     color: var(--very-dark-grayish-blue) ;
      margin-left: 20px;
      margin-right: 20px;
 }

@@ -1,6 +1,19 @@
-@Family : [Barlow Semi Condensed]
+@import url("https://fonts.google.com/specimen/Barlow+Semi+Condensed?family=Barlow+Semi+Condensed+display:wght@500;600");
+:root {
+  /* Typography */
+  --fs: 13px;
+  --fw-500: 500px;
+  --fw-600: 600px;
+  --moderate-violet: hsl(263, 55%, 52%);
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --very-dark-blackish-blue: hsl(219, 29%, 14%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(0, 0%, 81%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
 
 body {
+  font-family: 'Barlow Semi Condensed', sans-serif;
   background-color: #eaeef0;
   margin-top: 7%;
   margin-left: 7%;
@@ -23,8 +36,20 @@ body {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-area: daniel;
-  background-color: #7645c5;
+  background-color: var(--moderate-violet);
   border-radius: 2%;
+  background-image: url(./img/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+
+.daniel .msg1 {
+  color: white;
+}
+
+.daniel .msg2 {
+  color: var(--light-gray);
+  text-align: left;
 }
 
 .jonathan {
@@ -35,12 +60,8 @@ body {
   border-radius: 2%;
 }
 
-.jeanette {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: jeanette;
-  background-color: #ece3e3;
-  border-radius: 2%;
+.jonathan .msg2 {
+  color: var(--light-grayish-blue);
 }
 
 .kira {
@@ -48,8 +69,36 @@ body {
   -ms-grid-row-span: 2;
   -ms-grid-column: 4;
   grid-area: kira;
-  background-color: #471e1e;
+  background-color: white;
   border-radius: 2%;
+  -webkit-box-shadow: 10px 5px 5px #d9eef5;
+          box-shadow: 10px 5px 5px #d9eef5;
+}
+
+.kira .identificacion .nombre {
+  color: black;
+}
+
+.kira .msg1 {
+  color: black;
+}
+
+.jeanette {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: jeanette;
+  background-color: #ece3e3;
+  border-radius: 2%;
+  -webkit-box-shadow: 10px 5px 5px #d9eef5;
+          box-shadow: 10px 5px 5px #d9eef5;
+}
+
+.jeanette .identificacion .nombre {
+  color: black;
+}
+
+.jeanette .msg1 {
+  color: black;
 }
 
 .patrick {
@@ -79,7 +128,8 @@ body {
   margin-top: 1em;
   width: 42px;
   height: 42px;
-  border-radius: 42%;
+  border-radius: 50%;
+  border: 3px solid var(--light-gray);
 }
 
 .identificacion {
@@ -94,26 +144,27 @@ body {
 
 .nombre {
   color: white;
-  width: bold;
+  font-weight: bold;
 }
 
 .cargo {
-  color: gray;
-  height: 1px;
   margin-top: -20px;
+  font-size: 0.4rem;
+  color: var(--light-gray);
 }
 
 .msg1 {
-  font-size: 16px;
+  font-size: 1.3rem;
   font-weight: bold;
   color: white;
   margin-left: 20px;
   margin-right: 20px;
+  -ms-flex-line-pack: center;
+      align-content: center;
 }
 
 .msg2 {
-  color: #a39d9d;
-  font-size: 14px;
+  color: var(--very-dark-grayish-blue);
   margin-left: 20px;
   margin-right: 20px;
 }
